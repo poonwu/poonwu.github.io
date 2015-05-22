@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
 }
 header {
 	text-align: center;
@@ -7,7 +8,7 @@ header {
 	color: white;
 }
 header .container {
-	padding-top: 150px;
+	padding-top: 130px;
 	padding-bottom: 100px;
 }
 footer {
@@ -29,18 +30,20 @@ ul
 hr {
 	margin: 25px auto 30px;
 	padding: 0;
-	max-width: 290px;
+	max-width: 260px;
 	border: 0;
 	border-top: solid 1px;
 	text-align: center;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: lighter;
 }
 h1 {
 	font-size: 4em;
 }
 h2 {
 	font-size: 2.75em;
-	text-transform: uppercase;
-	font-weight: bold;
+	text-transform: lowercase;
 }
 footer h3 {
 	line-height: 1.8;
@@ -48,8 +51,14 @@ footer h3 {
 span.sub {
 	font-size:1.5em;
 }
+span.thin {
+	font-weight: lighter;
+}
 div.dummy {
 	height: 500px;
+}
+.page-scroll a {
+	font-size:15px;
 }
 .navbar-inverse .navbar-brand {
 	color:white;
@@ -79,6 +88,7 @@ div.dummy {
 }
 .powered-by {
 	font-size: 20px;
+	font-weight: lighter;
 }
 
 .btn-outline:hover,
