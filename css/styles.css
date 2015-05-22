@@ -22,10 +22,14 @@ section.success {
 	color: white;
 	background: #333;
 }
+ul
+{
+    list-style-type: none;
+}
 hr {
 	margin: 25px auto 30px;
 	padding: 0;
-	max-width: 250px;
+	max-width: 290px;
 	border: 0;
 	border-top: solid 1px;
 	text-align: center;
@@ -37,6 +41,9 @@ h2 {
 	font-size: 2.75em;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+footer h3 {
+	line-height: 1.8;
 }
 span.sub {
 	font-size:1.5em;
@@ -50,21 +57,28 @@ div.dummy {
 
 .btn-social {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #fff;
   border-radius: 100%;
   text-align: center;
-  font-size: 10px;
-  line-height: 23px;
+  font-size: 20px;
+  line-height: 38px;
+}
+.icn-title {
+	vertical-align: middle;
+	margin-right:13px;
 }
 
 .btn-outline {
   border: solid 1px #fff;
-  font-size: 12px;
+  font-size: 20px;
   color: #fff;
   background: 0 0;
   transition: all .3s ease-in-out;
+}
+.powered-by {
+	font-size: 20px;
 }
 
 .btn-outline:hover,
@@ -76,6 +90,19 @@ div.dummy {
     background: #fff;
 }
 
-.copyright {
-	margin-top:5px;
+.inverse.btn-social {
+	color: #333;
+	border-color: #333;
+}
+.inverse.btn-outline {
+	color: #333;
+	border-color: #333;
+}
+.inverse.btn-outline:hover,
+.inverse.btn-outline:focus,
+.inverse.btn-outline:active,
+.inverse.btn-outline.active {
+    border: solid 1px #333;
+    color: #fff;
+    background: #333;
 }
