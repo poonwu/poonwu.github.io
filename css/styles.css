@@ -121,8 +121,13 @@ a.next i {
 	margin-right:13px;
 }
 .powered-by {
-	font-size: 20px;
 	font-weight: lighter;
+}
+.powered-by li {
+	font-size: 2.8em;
+	text-align: center;
+	padding-left: 3px;
+	padding-right: 3px;
 }
 .btn-social {
   display: inline-block;
@@ -272,13 +277,13 @@ a.next i {
 }
 .exp li a {
 	/*overlay hack*/
-	-moz-box-shadow: inset rgba(0,0,0,0.4) 0 0 300px 200px;
-	-webkit-box-shadow: inset rgba(0,0,0,0.4) 0 0 300px 200px;
+	-moz-box-shadow: inset rgba(0,0,0,0.3) 0 0 300px 200px;
+	-webkit-box-shadow: inset rgba(0,0,0,0.3) 0 0 300px 200px;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	border-radius: 10px;
 	border: 1px solid #333;
-	box-shadow: inset rgba(0,0,0,0.4) 0 0 300px 200px;
+	box-shadow: inset rgba(0,0,0,0.3) 0 0 300px 200px;
 	color: #fff;
 	display: block;
 	margin-bottom: 1.0em;
@@ -314,10 +319,12 @@ a.next i {
 }
 .skill {
 	padding-top: 10px;
+	padding-left: 0;
 }
 
-.skill ul{
-	border-radius: 10px;
-	border: 1px solid #333;
-	padding: 4px 12px 8px;
+.skill li{
+	padding: 2px;
+	font-size:3.5em;
+	text-align: left;
+	vertical-align: middle;
 }
