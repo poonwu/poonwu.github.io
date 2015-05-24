@@ -27,13 +27,13 @@ header .container {
 }
 footer {
 	padding:30px 0;
-	background: #333;
-	color: white;
 }
 section {
+	color: #333;
+	background: white;
 	padding: 50px 0 150px 0; 
 }
-section.success {
+.inverse {
 	color: white;
 	background: #333;
 }
@@ -83,6 +83,18 @@ img {
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 }
+a.next, a:hover.next, a:active.next, a:visited.next{
+	color: white;
+	position:absolute;
+	bottom: 30px;
+}
+.inverse a.next, .inverse a:hover.next, .inverse a:active.next, .inverse a:visited.next{
+	color: #333;
+}
+a.next i {
+	padding-top: 2em;
+}
+
 .page-scroll a {
 	font-size:16px;
 }
@@ -103,54 +115,55 @@ img {
 	-moz-border-radius: 3em;
 	border-radius: 3em;
 }
-.btn-social {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 20px;
-  line-height: 38px;
-}
+
 .icn-title {
 	vertical-align: middle;
 	margin-right:13px;
-}
-
-.btn-outline {
-  border: solid 1px #fff;
-  font-size: 20px;
-  color: #fff;
-  background: 0 0;
-  transition: all .3s ease-in-out;
 }
 .powered-by {
 	font-size: 20px;
 	font-weight: lighter;
 }
+.btn-social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 38px;
+  color: #333;
+}
 
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
+.btn-outline {
+  border: solid 1px #333;
+  font-size: 20px;
+  color: #333;
+  background: 0 0;
+  transition: all .3s ease-in-out;
+}
+.inverse .btn-outline:hover,
+.inverse .btn-outline:focus,
+.inverse .btn-outline:active,
+.inverse .btn-outline.active {
     border: solid 1px #fff;
     color: #333;
     background: #fff;
 }
 
-.inverse.btn-social {
-	color: #333;
-	border-color: #333;
+.inverse .btn-social {
+	color: #fff;
+	border-color: #fff;
 }
-.inverse.btn-outline {
-	color: #333;
-	border-color: #333;
+.inverse .btn-outline {
+	color: #fff;
+	border-color: #fff;
 }
-.inverse.btn-outline:hover,
-.inverse.btn-outline:focus,
-.inverse.btn-outline:active,
-.inverse.btn-outline.active {
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
     border: solid 1px #333;
     color: #fff;
     background: #333;
@@ -190,6 +203,11 @@ img {
     border: none;
     background: none;
     display: block;
+    -webkit-transition: opacity 250ms ease;
+    -moz-transition: opacity 250ms ease;
+    -ms-transition: opacity 250ms ease;
+    -o-transition: opacity 250ms ease;
+    transition: opacity 250ms ease
 }
 .repos li div.repo div.repo-img:hover a.repo-link img {
 	opacity:0.08;
@@ -215,7 +233,7 @@ img {
 
 .repos li div.repo div.repo-img a.repo-over h4 {
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 500;
 }
 .repos li div.repo div.repo-img a.repo-over p {
 	font-size: 1.1em;
@@ -237,4 +255,69 @@ img {
 	height: 20px;
   	text-align: center;
 	line-height: 20px;
+}
+.inverse .repos li div.repo {
+	border-color: #777;
+}
+.inverse .repos li div.repo div.repo-img a.repo-over  {
+	color: #fff;
+}
+.inverse .repos li div.repo div.repo-img a.repo-over i{
+	border-color: #fff;
+}
+
+.exp {
+	padding-top: 10px;
+	padding-left: 0;
+}
+.exp li a {
+	/*overlay hack*/
+	-moz-box-shadow: inset rgba(0,0,0,0.4) 0 0 300px 200px;
+	-webkit-box-shadow: inset rgba(0,0,0,0.4) 0 0 300px 200px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius: 10px;
+	border: 1px solid #333;
+	box-shadow: inset rgba(0,0,0,0.4) 0 0 300px 200px;
+	color: #fff;
+	display: block;
+	margin-bottom: 1.0em;
+	padding: 4px 12px 8px;
+	text-decoration: none;
+	text-shadow: 1px 1px black;
+    -webkit-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -kthtml-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+.exp li a:hover {
+	-moz-box-shadow: inset rgba(0,0,0,0.7) 0 0 300px 200px;
+	-webkit-box-shadow: inset rgba(0,0,0,0.7) 0 0 300px 200px;
+	box-shadow: inset rgba(0,0,0,0.7) 0 0 300px 200px;
+    -webkit-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -kthtml-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+
+.exp li em {
+	font-style: normal;
+	font-size: 0.8em;
+	color: #ddd;
+}
+.exp li h5 small {
+	color: #888;
+}
+.skill {
+	padding-top: 10px;
+}
+
+.skill ul{
+	border-radius: 10px;
+	border: 1px solid #333;
+	padding: 4px 12px 8px;
 }
