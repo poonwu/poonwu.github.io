@@ -22,7 +22,7 @@ header, section {
 }
 header .container {
 	padding-top: 250px;
-	padding-bottom: 200px;
+	padding-bottom: 210px;
 	min-height: 768px;
 }
 footer {
@@ -30,8 +30,10 @@ footer {
 }
 section {
 	color: #333;
-	background: white;
-	padding: 50px 0 150px 0; 
+	background: white; 
+}
+section .container {
+	padding: 50px 0 150px 0;
 }
 .inverse {
 	color: white;
@@ -83,18 +85,26 @@ img {
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 }
+header a.next, header a:hover.next, header:active.next, header:visited.next {
+	color: #fff;
+}
 a.next, a:hover.next, a:active.next, a:visited.next{
-	color: white;
-	position:absolute;
-	bottom: 30px;
+	color: #333;
 }
 .inverse a.next, .inverse a:hover.next, .inverse a:active.next, .inverse a:visited.next{
-	color: #333;
+	color: #fff;
 }
 a.next i {
 	padding-top: 2em;
 }
-
+div.row-footer {
+	width: 100%	;
+	position: absolute;
+	bottom: 30px;
+}
+.container {
+	position: relative;
+}
 .page-scroll a {
 	font-size:16px;
 }
@@ -272,18 +282,18 @@ a.next i {
 }
 
 .exp {
-	padding-top: 10px;
+	padding-top: 14px;
 	padding-left: 0;
 }
 .exp li a {
 	/*overlay hack*/
-	-moz-box-shadow: inset rgba(0,0,0,0.3) 0 0 300px 200px;
-	-webkit-box-shadow: inset rgba(0,0,0,0.3) 0 0 300px 200px;
+	-moz-box-shadow: inset rgba(0,0,0,0.4) 0 0 300px 200px;
+	-webkit-box-shadow: inset rgba(0,0,0,0.4) 0 0 300px 200px;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	border-radius: 10px;
 	border: 1px solid #333;
-	box-shadow: inset rgba(0,0,0,0.3) 0 0 300px 200px;
+	box-shadow: inset rgba(0,0,0,0.4) 0 0 300px 200px;
 	color: #fff;
 	display: block;
 	margin-bottom: 1.0em;
@@ -298,9 +308,9 @@ a.next i {
     transition: all 250ms ease;
 }
 .exp li a:hover {
-	-moz-box-shadow: inset rgba(0,0,0,0.7) 0 0 300px 200px;
-	-webkit-box-shadow: inset rgba(0,0,0,0.7) 0 0 300px 200px;
-	box-shadow: inset rgba(0,0,0,0.7) 0 0 300px 200px;
+	-moz-box-shadow: inset rgba(0,0,0,0.1) 0 0 300px 200px;
+	-webkit-box-shadow: inset rgba(0,0,0,0.1) 0 0 300px 200px;
+	box-shadow: inset rgba(0,0,0,0.1) 0 0 300px 200px;
     -webkit-transition: all 250ms ease;
     -o-transition: all 250ms ease;
     -moz-transition: all 250ms ease;
@@ -318,13 +328,13 @@ a.next i {
 	color: #888;
 }
 .skill {
-	padding-top: 10px;
+	padding-top: 14px;
 	padding-left: 0;
 }
 
 .skill li{
 	padding: 2px;
-	font-size:3.5em;
+	font-size:4em;
 	text-align: left;
 	vertical-align: middle;
 }

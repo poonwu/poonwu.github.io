@@ -17,3 +17,8 @@ $(function() {
     	$('.navbar-toggle:visible').click();
 	});
 });
+
+/* Tooltip */
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
